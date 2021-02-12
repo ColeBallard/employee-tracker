@@ -1,7 +1,7 @@
 # Employee Tracker
 ## **Description**
 
-Allows user to view, add, and update employee data into an organized database from command line prompts. User can access and manipulate database within their own project using (lowdb)[https://github.com/typicode/lowdb] functionality.
+Allows user to view, add, and update employee data into an organized database from command line prompts. User can access and manipulate database within their own project using [lowdb](https://github.com/typicode/lowdb) functionality.
 
 Uses [lowdb](https://github.com/typicode/lowdb), [inquirer](https://github.com/SBoudrias/Inquirer.js) and [chalk](https://github.com/chalk/chalk).
 ## **Install**
