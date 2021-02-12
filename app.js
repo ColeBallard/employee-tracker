@@ -2,8 +2,7 @@ const { Department, Role, Employee } = require('./proto.js');
 
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
-// const dbPath = '../../db'; <- actual path
-const dbPath = './db';
+const dbPath = '../../db';
 const fs = require('fs');
 
 if (!fs.existsSync(dbPath))
