@@ -10,7 +10,7 @@ if (!fs.existsSync(dbPath))
 
 fs.open(`${dbPath}/employee_db.json`, error => {
   if (error)
-    console.log(chalk.red(error))
+    console.log(chalk.green('Creating directory...'));
 });
 const db = low(new FileSync(`${dbPath}/employee_db.json`));
 
