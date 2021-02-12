@@ -1,0 +1,141 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Engineering"
+    },
+    {
+      "id": 2,
+      "name": "Executive"
+    },
+    {
+      "id": 3,
+      "name": "Sales"
+    },
+    {
+      "id": 4,
+      "name": "Advertising"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "title": "Junior Developer",
+      "salary": 70000,
+      "departmentID": 1
+    },
+    {
+      "id": 2,
+      "title": "Senior Developer",
+      "salary": 100000,
+      "departmentID": 1
+    },
+    {
+      "id": 3,
+      "title": "Manager",
+      "salary": 300000,
+      "departmentID": 2
+    },
+    {
+      "id": 4,
+      "title": "Salesperson",
+      "salary": "60000",
+      "departmentID": 3
+    },
+    {
+      "id": 5,
+      "title": "Sales Lead",
+      "salary": "75000",
+      "departmentID": 3
+    },
+    {
+      "id": 6,
+      "title": "Sales Intern",
+      "salary": "40000",
+      "departmentID": 3
+    },
+    {
+      "id": 7,
+      "title": "Sales Theory",
+      "salary": "120000",
+      "departmentID": 3
+    },
+    {
+      "id": 8,
+      "title": "Software Tester",
+      "salary": "50000",
+      "departmentID": 1
+    },
+    {
+      "id": 9,
+      "title": "Ad Lead",
+      "salary": "90000",
+      "departmentID": 4
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Devon",
+      "lastName": "Larrat",
+      "roleID": 3,
+      "managerID": null
+    },
+    {
+      "id": 2,
+      "firstName": "Michael",
+      "lastName": "Jamison",
+      "roleID": 3,
+      "managerID": null
+    },
+    {
+      "id": 3,
+      "firstName": "Pierre",
+      "lastName": "Montenegro",
+      "roleID": 1,
+      "managerID": null
+    },
+    {
+      "id": 4,
+      "firstName": "Cole",
+      "lastName": "Ballard",
+      "roleID": null,
+      "managerID": 2
+    },
+    {
+      "id": 5,
+      "firstName": "Jereemy ",
+      "lastName": "Shada",
+      "roleID": 4,
+      "managerID": 1
+    },
+    {
+      "id": 6,
+      "firstName": "Jesus",
+      "lastName": "Christ",
+      "roleID": 3,
+      "managerID": null
+    },
+    {
+      "id": 7,
+      "firstName": "Marceline",
+      "lastName": "Boutwell",
+      "roleID": 4,
+      "managerID": 6
+    },
+    {
+      "id": 8,
+      "firstName": "Clay",
+      "lastName": "Madsen",
+      "roleID": 3,
+      "managerID": null
+    },
+    {
+      "id": 9,
+      "firstName": "Christian",
+      "lastName": "Hoyer",
+      "roleID": 1,
+      "managerID": 8
+    }
+  ]
+}

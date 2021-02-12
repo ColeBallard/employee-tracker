@@ -1,0 +1,38 @@
+{
+  "welcome": "Welcome to ETI (Employee Tracker Interface).",
+  "main": {
+    "type": "list",
+    "message": "What would you like to do?",
+    "choices": [
+      "View Employees",
+      "View Roles",
+      "View Departments",
+      "Add Employee",
+      "Add Role",
+      "Add Department",
+      "Update Employee Role",
+      "Close"
+    ],
+    "name": "main"
+  },
+  "add": {
+    "type": "input",
+    "message": "",
+    "name": "add",
+    "default": "none"
+  },
+  "update": [
+    {
+      "type": "list",
+      "message": "",
+      "choices": [],
+      "name": "update"
+    },
+    {
+      "type": "list",
+      "message": "",
+      "choices": [],
+      "name": "update"
+    }
+  ]
+}
