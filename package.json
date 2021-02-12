@@ -1,23 +1,29 @@
 {
   "name": "employee-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Allows user to view, add, and update employee data into an organized database from command line prompts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ColeBallard/employee-tracker.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "employee",
+    "database",
+    "management",
+    "cms"
+  ],
+  "author": "Cole Ballard <colebdev0@gmail.com> (https://coleballard.github.io/)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ColeBallard/employee-tracker/issues"
   },
   "homepage": "https://github.com/ColeBallard/employee-tracker#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "inquirer": "^7.3.3",
     "lowdb": "^1.0.0"
   }
