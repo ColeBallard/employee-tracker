@@ -1,8 +1,8 @@
 {
   "name": "employee-tracker",
-  "version": "1.0.0",
-  "description": "Allows user to view, add, and update employee data into an organized database from command line prompts.",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Program that allows user to view, add, and update employee data into an organized database from command line prompts.",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
