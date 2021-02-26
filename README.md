@@ -37,4 +37,4 @@ db.get('roles')
 ```
 **Not recommended to write to database using lowdb functions because of id incrementing.**
 
-## **[Tutorial Video](https://youtu.be/)**
+## **[Tutorial Video](https://youtu.be/GKbcJ-cigc0)**
