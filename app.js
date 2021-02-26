@@ -71,6 +71,9 @@ const getManagerID = () => {
   const managerRole = db.get('roles')
   .find({ title: 'Manager' })
   .value();
+
+  if (!managerRole)
+    return null;
   return managerRole.id;
 };
 
@@ -94,6 +97,8 @@ const getKeyList = key => {
   }
   else if (key === 'managers') {
     const managerID = getManagerID();
+    if (!managerID)
+      return [];
     for (let manager of db.get('employees').filter({roleID: managerID}).value()) 
       keyList.push(`[${manager.id}] ${manager.firstName} ${manager.lastName}`);
   }
