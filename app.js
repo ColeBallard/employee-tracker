@@ -1,22 +1,13 @@
 const { Department, Role, Employee } = require('./proto.js');
-
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const dbPath = '../../db';
-const fs = require('fs');
-
-if (!fs.existsSync(dbPath))
-  fs.mkdirSync(dbPath);
-
-fs.open(`${dbPath}/employee_db.json`, error => {
-  if (error)
-    console.log(chalk.green('Creating directory...'));
-});
-const db = low(new FileSync(`${dbPath}/employee_db.json`));
-
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 const prompts = require('./prompts.json');
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
+// const dbPath = '../../db';
+const dbPath = './db';
+const fs = require('fs');
+let db;
 
 // Helper Functions
 
@@ -367,16 +358,26 @@ const menu = () => {
 };
 
 const initDB = () => {
+  if (!fs.existsSync(dbPath))
+    fs.mkdirSync(dbPath);
+
+  fs.writeFile(`${dbPath}/employee_db.json`, '', { flag: 'wx' }, function (err) {
+    if (!err)
+      console.log(chalk.green('Creating directory...'));
+});
+
+  db = low(new FileSync(`${dbPath}/employee_db.json`));
+
   db.defaults({ departments: [], roles: [], employees: [] })
   .write();
 };
 
 // Initial Function
 
-const init = () => {
-  initDB();
+const init = async () => {
+  await initDB();
   console.log(chalk.green(prompts.welcome));
-  menu();
+  // menu();
 };
 
-init();
+(async () => init())()

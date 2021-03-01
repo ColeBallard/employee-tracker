@@ -1,5 +1,5 @@
 {
-  "welcome": "Welcome to ETI (Employee Tracker Interface).",
+  "welcome": "Welcome to the Employee Tracker Interface.",
   "main": {
     "type": "list",
     "message": "What would you like to do?",
