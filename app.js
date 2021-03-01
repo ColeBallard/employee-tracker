@@ -361,10 +361,8 @@ const initDB = () => {
   if (!fs.existsSync(dbPath))
     fs.mkdirSync(dbPath);
 
-  fs.writeFile(`${dbPath}/employee_db.json`, '', { flag: 'wx' }, function (err) {
-    if (!err)
-      console.log(chalk.green('Creating directory...'));
-});
+  if (!fs.existsSync(`${dbPath}/employee_db.json`))
+    console.log(chalk.green('Creating directory...'));
 
   db = low(new FileSync(`${dbPath}/employee_db.json`));
 
@@ -375,9 +373,10 @@ const initDB = () => {
 // Initial Function
 
 const init = async () => {
-  await initDB();
   console.log(chalk.green(prompts.welcome));
-  // menu();
+  await initDB();
+  
+  menu();
 };
 
-(async () => init())()
+(async () => init())();
